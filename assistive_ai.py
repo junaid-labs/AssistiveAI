@@ -1031,10 +1031,15 @@ try:
         # -------------------------------------
 
         elif (
-            "assist mode" in command
-            or "start assistance" in command
-            or "help me walk" in command
-        ):
+    "assist mode" in command
+    or "assistant mode" in command
+    or "assistive mode" in command
+    or command == "assist"
+    or command == "assistant"
+    or "start assistance" in command
+    or "help me walk" in command
+    or "automatic assistance" in command
+):
 
             assist_mode()
         # -------------------------------------
